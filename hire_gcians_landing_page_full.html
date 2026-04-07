@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hire GCians! — Landing Page</title>
+    <link rel="stylesheet" href="hire_gcians.css">
+</head>
+
+<body class="hg-landing" data-page="landing">
+    <nav class="nav">
+        <div class="logo" onclick="location.href='hire_gcians_landing_page_full.html'" style="cursor:pointer">Hire <span>GCians!</span></div>
+        <div class="nav-links">
+            <a href="hire_gcians_job_listing.html">Browse Jobs</a>
+            <a href="hire_gcians_for_employers.html">For Employers</a>
+            <a href="hire_gcians_about.html">About</a>
+            <button class="btn-outline" onclick="location.href='hire_gcians_auth.html'">Log in</button>
+            <button class="btn-primary" onclick="location.href='hire_gcians_auth.html'">Sign up free</button>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div>
+            <div class="hero-tag">For Gordon College Students</div>
+            <h1>Your campus career, <em>intelligently</em> matched.</h1>
+            <p>HIRE GCians! connects you to on-campus jobs, internships, and volunteer roles — ranked by how well they
+                actually fit your skills.</p>
+            <div class="hero-btns">
+                <button class="btn-primary" onclick="location.href='hire_gcians_job_listing.html'">Find opportunities</button>
+                <button class="btn-outline" data-role-action="employer-only" onclick="location.href='hire_gcians_employer_posting.html'">Post a job</button>
+            </div>
+        </div>
+        <div class="hero-visual" id="landing-match-cards">
+            <div class="ai-badge">
+                <div class="ai-dot"></div> AI Matching active
+            </div>
+            <div class="match-card">
+                <div class="match-header">
+                    <div class="match-title">UI/UX Design Intern</div>
+                    <div class="match-pct">94% match</div>
+                </div>
+                <div class="match-sub">College of Computer Studies · Part-time</div>
+                <div class="match-bar-bg">
+                    <div class="match-bar" style="width:94%"></div>
+                </div>
+                <div class="match-tags"><span class="tag">Figma</span><span class="tag">Adobe XD</span><span
+                        class="tag">Prototyping</span></div>
+            </div>
+            <div class="match-card" style="background:#fff;border:0.5px solid #C0DD97">
+                <div class="match-header">
+                    <div class="match-title">Web Dev Assistant</div>
+                    <div class="match-pct" style="background:#639922">81% match</div>
+                </div>
+                <div class="match-sub">IT Department · Flexible hours</div>
+                <div class="match-bar-bg">
+                    <div class="match-bar" style="width:81%;background:#639922"></div>
+                </div>
+                <div class="match-tags"><span class="tag">Vue.js</span><span class="tag">HTML/CSS</span></div>
+            </div>
+            <div class="match-card" style="background:#fff;border:0.5px solid #C0DD97">
+                <div class="match-header">
+                    <div class="match-title">Graphic Design Volunteer</div>
+                    <div class="match-pct" style="background:#97C459;color:#27500A">73% match</div>
+                </div>
+                <div class="match-sub">Student Affairs · On-site</div>
+                <div class="match-bar-bg">
+                    <div class="match-bar" style="width:73%;background:#97C459"></div>
+                </div>
+                <div class="match-tags"><span class="tag">Canva</span><span class="tag">Illustrator</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="stats-row" id="landing-stats"></div>
+
+    <div class="how-section">
+        <div class="section-label">How it works</div>
+        <div class="section-title">Three steps to your next opportunity</div>
+        <div class="steps">
+            <div class="step-card">
+                <div class="step-num">1</div>
+                <div class="step-title">Build your profile</div>
+                <div class="step-desc">Add your skills, course, and interests. Our system turns your profile into an
+                    AI-readable format.</div>
+            </div>
+            <div class="step-card">
+                <div class="step-num">2</div>
+                <div class="step-title">Get matched</div>
+                <div class="step-desc">Our Cosine Similarity engine calculates your fit with every job and surfaces the
+                    best matches first.</div>
+            </div>
+            <div class="step-card">
+                <div class="step-num">3</div>
+                <div class="step-title">Apply in one click</div>
+                <div class="step-desc">Submit your application directly through the platform. Employers are notified
+                    instantly.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Gordon College · College of Computer Studies · Olongapo City</div>
+    <script src="hire_gcians.js"></script>
+</body>
+
+</html>
+
